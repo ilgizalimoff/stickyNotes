@@ -1,33 +1,50 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     background-color: #c68c53a8;
     font-family: "Architects Daughter";
     font-size: 24px;
 }
-.main-container{
+
+.main-container {
     width: 85%;
     margin: auto;
 }
-.container1{
+
+.container1 {
     margin-left: 5%;
 }
-.container2{
+
+.container2 {
+    margin: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-left: 5%;
 }
-.container3{
-    /* display: none; */
+
+.container3 {
     position: absolute;
     top: 26%;
     left: 40%;
+    animation: ani 0.8s forwards;
 }
-textarea{
+
+@keyframes ani {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: 26%;
+    }
+}
+
+textarea {
     box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
     outline: none;
     border: none;
@@ -35,16 +52,40 @@ textarea{
     height: 275px;
     padding: 40px 25px 25px 25px;
 }
-svg{
+
+svg {
     color: gray;
 }
-#check-icon{
+
+#check-icon {
     position: absolute;
     right: 17%;
     top: 4%;
 }
-#x-icon{
+
+#x-icon {
     position: absolute;
     right: 5%;
     top: 4%;
 }
+
+#x-icon:hover {
+    color: red;
+}
+
+#check-icon:hover {
+    color: green;
+
+}
+
+@media(max-width: 964px){
+    .container3 {
+        left: 33%;
+    }
+}
+
+@media(max-width: 520px){
+    .container3 {
+        left: 23%;
+    }
+}   
