@@ -15,6 +15,7 @@ body {
 }
 
 .container1 {
+    margin-top: 10px;
     margin-left: 5%;
 }
 
@@ -29,8 +30,8 @@ body {
 
 .container3 {
     position: absolute;
-    top: 26%;
-    left: 40%;
+    top: calc(50% - 275px/2);
+    left: calc(50% - 275px/2);
     animation: ani 0.8s forwards;
 }
 
@@ -77,15 +78,3 @@ svg {
     color: green;
 
 }
-
-@media(max-width: 964px){
-    .container3 {
-        left: 33%;
-    }
-}
-
-@media(max-width: 520px){
-    .container3 {
-        left: 23%;
-    }
-}   
