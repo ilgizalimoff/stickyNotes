@@ -5,6 +5,8 @@ let xIcon = document.getElementById('x-icon')
 let textArea = document.getElementById('note-text')
 let i = 0
 
+window.addEventListener('load', function () { textArea.value = '' })
+
 xIcon.addEventListener('click', function () {
     typeNote()
 })
